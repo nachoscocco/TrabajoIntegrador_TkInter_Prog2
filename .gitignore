@@ -5,3 +5,5 @@ STATUS.md
 generar_pdf_tp2.py
 reporte_testing.md
 *.pdf
+crud_explicado.py
+*.db

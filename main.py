@@ -27,8 +27,8 @@ def main():
     notebook = ttk.Notebook(root)
     notebook.pack(fill="both", expand=True, padx=10, pady=10)
 
-    pacientes_repo = Repository()
-    medicos_repo = Repository()
+    pacientes_repo = Repository("clinica.db", "pacientes", PACIENTE_FIELDS)
+    medicos_repo = Repository("clinica.db", "medicos", MEDICO_FIELDS)
 
     pacientes_tab = GenericCRUDFrame(
         notebook, "Pacientes", PACIENTE_FIELDS, pacientes_repo
